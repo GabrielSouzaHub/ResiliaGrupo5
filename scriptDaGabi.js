@@ -6,7 +6,8 @@ function funcaoDaGabi(){
     p.textContent = texto;
     p.addEventListener('mouseenter', randomizeColor.bind(this, p));
     p.addEventListener('mouseleave', stopRandomization);
-    document.body.append(p);
+    let myDiv = document.getElementById('gabriella');
+    myDiv.append(p);
 }
 
 function randomizeColor(element){
